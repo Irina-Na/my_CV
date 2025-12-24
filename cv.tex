@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -48,7 +48,12 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
+
+
+% в преамбулу добавь:
+
+\raggedbottom
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +68,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,14 +77,15 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -89,7 +95,7 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+\setlength\bibitemsep{0pt}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -120,9 +126,10 @@
 \href{https://github.com/Irina-Na}{\raisebox{-0.05\height}\faGithub\ Irina-Na} \ $|$ \
 \href{https://linkedin.com/in/irinanosal}{\raisebox{-0.05\height}\faLinkedin\ irinanosal} \ $|$ \
 \href{mailto:ironia.i@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ ironia.i@gmail.com} \ $|$ \
-\href{tel:+381652655159}{\raisebox{-0.05\height}\faMobile \ +381 65 9438842} \ $|$ \
+\href{tel:+381659438842}{\raisebox{-0.05\height}\faMobile \ +381 65 9438842} \ $|$ \
 \href{tel:+79222798856}{\raisebox{-0.05\height}\faMobile \ +7(922)279-88-56} \\
 \end{tabularx}
+
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
@@ -130,110 +137,84 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-AI team lead and engineer with Ph.D., expertise in NLP, matching, search, and LLM for business decisions. 15+ years in Tech (Telecom, InfoSec, ML), 8+ years in software dev (Python, SQL, Matlab, C, Assembler), 4+ years commercial. 5+ years in research, 4+ years in AI/ML/DS and 2+ years in AI/ML product management. \href{https://scholar.google.com/citations?user=g1m_ATEAAAAJ&hl=ru}{Has 8+ publications. Hirsh Index 4. }
+AI tech lead and engineer with Ph.D., expertise in NLP, matching, search, and LLM for business decisions. 15+ years in Tech (Telecom, InfoSec, ML), 8+ years in software dev (Python, SQL, Matlab, C, Assembler), 5+ years commercial. 5+ years in research, 5+ years in AI/ML/DS and 2+ years in AI/ML product management. \href{https://scholar.google.com/citations?user=g1m_ATEAAAAJ&hl=ru}{Has 8+ publications. Hirsh Index 4. }
 
-%Experience
+%Experience 1
 \section{Work Experience}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{AI TEAM LEAD, AI ENGINEER | \href{https://haqq.network/}{HAQQ Network}} \hfill Mar 2024 - present \\[3.75pt]
-\footnotesize \textbf{Blockchain} ecosystem HAQQ with capital of \$200 million and more then 200 employees \\ [1.0pt]
+% ---- HAQQ (как AUTODOC/WELLNITE: без tabularx) ----
+\noindent\textbf{AI TECH LEAD, AI ENGINEER | \href{https://haqq.network/}{HAQQ Network}}
+\hfill \mbox{Mar 2024 -- present}\par
+\footnotesize \textbf{Blockchain} ecosystem HAQQ with capital of \$200 million and more then 200 employees.\par
 
-\textbf{\href{https://www.mmapp.org/}{Expert chatbot for messenger}} \hfill \textbf {As Team and Tech lead, AI engineer}\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] We evolved from a basic vector-based RAG to specialized retrieval methods, including SQL for stats and entity lookup, work with real-time sources. \item[--] Built cross-domain benchmarks and a quality evaluation framework. Coordinated multiple teams.
-    \end{itemize}
-    \end{minipage}
-}  \\ [4.0pt]
-\textbf{Voice assistant for messenger}   \hfill \textbf{As System Design Architect, LLM engineer}\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developed with OpenAI GPT under the hood. Developed an algorithm for spoken contact name recognition, handling variant spellings from different languages.
-    \end{itemize}
-    \end{minipage}
-}  \\
-\footnotesize Technologies: RAG, Routing, SO, CoT, prompt engineering, domain driven design, ElasticSearch, other vector db, FastAPI,\\
-\footnotesize  LangChain, Langfuse, LangSmith, RAGAS, Spicy, text2sql, multi-modal agents, Huggingface.  \\
-\end{tabularx}
+\noindent\textbf{\href{https://www.mmapp.org/}{Expert chatbot for messenger}}
+\hfill \textbf{Tech Lead, AI Engineer}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--] We evolved from a basic vector-based RAG to specialized retrieval methods, including SQL for stats and entity lookup, work with real-time sources.
+  \item[--] Built cross-domain benchmarks and a quality evaluation framework. Coordinated multiple teams.
+\end{itemize}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{AI/ML ENGINEER, DATA SCIENTIST | \href{https://www.autodoc.eu/}{AUTODOC EU}} \hfill Oct 2022 - Mar 2024 \\[3.75pt]
-\footnotesize EU top \textbf{car-parts e-store} with €1.1B in sales and 5.2M products. \\
-\footnotesize Operating in 27 EU countries, 5000+ employees at 8 sites\\ [1.0pt]
+\noindent\textbf{Voice assistant for messenger}
+\hfill \textbf{System Design Architect, LLM Engineer}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--] Developed with OpenAI GPT under the hood. Developed an algorithm for spoken contact name recognition, handling variant spellings from different languages.
+\end{itemize}
 
-\textbf{AI Solutions for Analytics}   \hfill \textbf{As Product manager, LLM engineer}\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developing LLM agents as database co-pilot, Ad-hoc analytics using Azure OpenAI and LangChain.
-    \end{itemize}
-    \end{minipage}
-}  \\ [4.0pt]
+\noindent\textbf{LetAI / Nutrition Estimation Agent}
+\hfill \textbf{Solo Lead AI Engineer}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--] Developed multimodal LLM-based agent from scratch as a production service: designed strict structured I/O schemas, implemented the full request→LLM→postprocess pipeline (validation, errors, caching), integrated tracing/monitoring, and hardened reliability (rate/length limits, timeouts, error typing).
+  \item[--] Built and iterated the evaluation pipeline (benchmarks + automated judging + manual review) to compare model versions and track quality/latency for nutrition extraction.
 
-\textbf{Matching assortment for e-commerce}  \hfill \textbf{As ML engineer}\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Completed clustering car-parts based on technical fits and consumer characteristics.
-        \item[--] Developed the algorithm, prepared the dashboard. This enabled the following two projects.
-    \end{itemize}
-    \end{minipage}
-}  \\ [4.0pt]
+\end{itemize}
 
-\textbf{Data coverage for product marketing team}  \hfill \textbf{As Product manager, DS} \\
-\multicolumn{2}{@{}X@{}}{Lead a team to design, implement, and use a data governance system for product marketing. Collaborate with cross-functional teams to translate business requirements into technical solutions. Design and plan system architecture.}\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Enabled analytics dept. to achieve complex goals unattainable for 18 months.
-        \item[--] Cut product launch prep time from 2 weeks to 1 day for product managers.
-    \end{itemize}
-    \end{minipage}
-}\\ [9.5pt]
+\noindent\textbf{Fashion / AI Stylist}
+\hfill \textbf{Solo Lead AI Engineer}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--]  Designed and built from scratch an LLM-based AI stylist service that takes outfit requests and generates a complete look (items + combinations) with consistent style, fit, color harmony, weather/temperature, etc.
+  \item[--] Built a multimodal LLM garment attribute extractor (style/fit/texture/pattern/color/seasonality) and created the labeled image dataset.
+  \item[--] Created a knowledge capture workflow from expert videos (transcription + structured extraction).
+\end{itemize}
 
-\textbf{VIO-coverage}   \hfill \textbf{As Data Scientist} \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] An assortment coverage gap assessment system. Matching big data of auto parts clustering and market demand. Updated heatmap of assortment gaps, boosting revenue by 8.7\% yearly.
-    \end{itemize}
-    \end{minipage}
-}  \\
+\footnotesize Technologies: RAG, Routing, SO, CoT, prompt engineering, domain driven design, ElasticSearch, other vector db, FastAPI,
+LangChain, Langfuse, LangSmith, RAGAS, Spicy, text2sql, multi-modal agents, Huggingface.\par
+\vspace{6pt}
 
-\footnotesize Technologies: Azur OpenAI API, LangChain, Glove, DBSCAN, PCA/TSNE, HuggingFace, GCP, Airflow, SQL, Metabase.\\
-\end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{AI/ML ENGINEER | \href{wellnite.com}{WELLNITE}} & \hfill Dec 2021 - Oct 2022 \\[3.75pt]
-\footnotesize Well-being \textbf{self-care} and \textbf{medtech} startup hit \$17.6M revenue in 2023 with a 67 person team.\\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Developed RAG component, data preprocessing, prompt engineering, text summarizing, model tuning.
-        \item[--] Design, develop and implement ML services, deploy to production on Bitbucket, GCP.
-        \item[--] Manage the product and collaborate with members of the support and engineering teams.
-    \end{itemize}
-    \end{minipage}
-} \\
-\footnotesize Technologies: Flask, NLP, LLMs, GPT OpenAI API, NLTK, HuggingFace, BERT, Converse. \\
-\end{tabularx}
+\vspace{6pt}
+\noindent\textbf{AI/ML ENGINEER, DATA SCIENTIST | \href{https://www.autodoc.eu/}{AUTODOC EU}}
+\hfill \mbox{Oct 2022 -- Mar 2024}\par
+\footnotesize EU top \textbf{car-parts e-store} with €1.1B in sales and 5.2M products. Operating in 27 EU countries, 5000+ employees at 8 sites.\par
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{ML ENGINEER | freelance} & \hfill Oct 2021 - Nov 2021 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] For forecasting voltage consumption developed a predictive Ml model(LSTM). Aquracy (RMSE) 81.7\%.
-        \item[--] Developed prototype of web service for IoT anomaly detection with Autoencoder models.
-    \end{itemize}
-    \end{minipage}
-}\\
-\footnotesize Technologies: Tensorflow, Streamlit, Anomaly detection, TS forecasting, LSTM, Autoencoders. \\
-\end{tabularx}
+\noindent\textbf{LLM Analytics Copilot (text-to-SQL \& ad-hoc analytics)}
+\hfill \textbf{LLM Engineer / PM}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--] Built LLM agents for database co-pilot and ad-hoc analytics using Azure OpenAI and LangChain.
+\end{itemize}
 
+\noindent\textbf{Assortment Matching \& Coverage Analytics}
+\hfill \textbf{ML Engineer / Data Scientist}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+  \item[--] Clustered car parts by technical fit and customer attributes; built an internal dashboard used by ops teams.
+  \item[--] Led data governance and coverage gap assessment; reduced product launch prep time from 2 weeks to 1 day and improved assortment gaps visibility (heatmap), boosting revenue by 8.7\% yearly.
+\end{itemize}
+
+\footnotesize Technologies: Azure OpenAI API, LangChain, GloVe, DBSCAN, PCA/TSNE, HuggingFace, GCP, Airflow, SQL, Metabase.\par
+\vspace{16pt}
+
+
+%Experience 2
+
+
+% ---- WELLNITE (без tabularx) ----
+\noindent\textbf{AI/ML ENGINEER | \href{https://wellnite.com}{WELLNITE}}   \hfill{\mbox{Dec 2021 -- Oct 2022}} \par
+\footnotesize Well-being \textbf{self-care} and \textbf{medtech} startup hit \$17.6M revenue in 2023 with a 67 person team.\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=3pt]
+  \item[--] Built RAG components: data preprocessing, prompt engineering, summarization, and model tuning.
+  \item[--] Led product delivery and deployed ML services to production on GCP in collaboration with engineering and support teams.
+\end{itemize}
+\footnotesize Technologies: Bitbucket, GCP, Flask, NLP, LLMs, GPT OpenAI API, NLTK, HuggingFace, BERT, Converse.\par
+\vspace{6pt}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{ML ENGINEER, DATA SCIENTIST | COMMUDATA}    \hfill \hspace{90pt} Feb 2021 - Oct 2021\\[3.75pt]
@@ -242,8 +223,7 @@ AI team lead and engineer with Ph.D., expertise in NLP, matching, search, and LL
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
         \item[--] Developed text anomaly detection model and prototype of Log Anomaly Detection web-app.
-        \item[--] Improved the product library with new text-feature extraction functions,
-resulting in a 7\% increase in ROC AUC.
+        \item[--] Improved the product library with new text-feature extraction, increasing ROC AUC by 7\% .
     \end{itemize}
     \end{minipage}
 } \\
@@ -252,14 +232,12 @@ resulting in a 7\% increase in ROC AUC.
 
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{LEAD CYBERSECURITY ENGINEER | \href{www.pfrf.ru}{PFR in the Komi Republic}}  & \hfill Jun 2011 - Feb 2021 \\[3.75pt]
+\textbf{LEAD CYBERSECURITY ENGINEER | \href{www.pfrf.ru}{PFR in the Komi Republic}}  & \hfill Jun 2011 - Feb 2021 \\
 \footnotesize Regional dept. Pension Fund of Russia (160+ employees in regional HQ, 22 district branches)\\
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Experienced in collaborating with IT depts., stakeholders, as dept.head and supervised district depts.
-        \item[--] Mentoring, on-boarding, hiring.
-        \item[--] Deployed CyberSecSystems for compliance, developed Anti-FRAUD programs, created role model reducing access time in 10 times and extended access mgmt. system to other regional PRF offices.
+        \item[--] Mentoring, hiring, onboarding; IT/business stakeholders collaborating, supervised 22 district depts; Designed RBAC model (10× faster access provisioning) and scaled it across regional offices.
     \end{itemize}
     \end{minipage}
 }\\
@@ -271,43 +249,82 @@ resulting in a 7\% increase in ROC AUC.
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\textbf{\href{https://abdullin.com/erc/}{Enterprise RAG and Agent Challenge}} & \hfill \textbf{Participant} \\[-2pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{itemize}[leftmargin=*, nosep]
+  \item For \href{https://www.timetoact-group.at/en/insights/the-winner-of-the-enterprise-rag-challenge}{ERC \#2} designed and implemented  \href{https://github.com/Irina-Na/RAG_challenge_v2}{RAG-based agent}, for enterprise information retrieval tasks.
+  \item  For \href{https://erc.timetoact-group.at/}{ERC \#3} designed and implemented  \href{https://github.com/Irina-Na/SGR_agent_for_ERC3}{agents with different architectures}.
+\end{itemize}
+} \\[-8pt]
+
 \textbf{\href{https://play.google.com/store/apps/datasafety?id=ru.exhibition.prod}{DariaAI}} & \hfill \textbf{As Sr.ML engineer} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Navigation chatbot for one of the top exhibition spaces globally (30M+  yearly visitors) website and mobile app (200K+ users).  Implemented entity extraction, optimized search engine, and developed search logging and data prep service (annotation, summarizing) using LLMs, enhancing chatbot performance and UX.
-}  \\
+\multicolumn{2}{@{}X@{}}{
+Navigation chatbot for one of the top exhibition spaces globally (30M+ yearly visitors) website and mobile app (200K+ users).
+Implemented entity extraction, optimized search engine, and developed search logging and data prep service (annotation, summarizing) using LLMs, enhancing chatbot performance and UX.
+} \\ [30pt]
+
+\textbf{\href{https://www.youtube.com/@CreativeWorkshop-s}{CreativeWorkshops} -- AI Research \& Community Initiative} & \hfill \textbf{Co-organizer} \\[-8pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{itemize}[leftmargin=*, nosep]
+  \item Active member of \href{https://t.me/ods_ns/2504}{the local} division of \href{https://old.ods.ai/en/}{OpenDataScience} community and co-organizer of  \href{https://t.me/+AK0U2AOuqgFjYWJi}{AI research community}.
+  \item Co-organized meetups and public talks on applied AI; created a platform for local experts across diverse fields to share knowledge. Maintainer of the community \href{https://www.youtube.com/@CreativeWorkshop-s}{YouTube channel}.
+\end{itemize}
+} \\[-8pt]
+
 \end{tabularx}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
+% --- Associate Professor (Adjunct) ---
+\multicolumn{2}{@{}X@{}}{
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{Associate Professor (Adjunct) at \href{https://en.syktsu.ru/}{Syktyvkar State University}}
+     \textit{\mbox{remote}}
+  \end{tabularx}
+} \\
+\multicolumn{2}{@{}X@{}}{
+\footnotesize
+Taught neural networks and applied AI for future cybersecurity specialists.
+} \\[4pt]
+
 2011 - 2016 & PhD (Modeling and Security) at \textbf{\href{http://www.spiiras.nw.ru/en/}{St. Petersburg Institute for Informatics and Automation Russian Academy of Sciences (SPIIRAS)}} \\
 
-2005 - 2010 & Masters Degree (with Honors) at \textbf{\href{https://en.syktsu.ru/}{Syktyvkar State University}} ranked top1 in the Komi Republic, Information security specialist \hfill  \\
+2005 - 2010 & Masters Degree (with Honors) at \textbf{\href{https://en.syktsu.ru/}{Syktyvkar State University}} ranked top1 in the Komi Republic, Information security specialist \\[-4pt]
+
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{Publications}
-
+\footnotesize
 \begin{refsection}[citations.bib]
 \nocite{nosal2011modeling, nosal2013justification}
 \printbibliography[heading=none]
 \end{refsection}
-
-
+\endgroup
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
+
+{\footnotesize
+\setlength{\tabcolsep}{1pt}
+\renewcommand{\arraystretch}{1.0}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-NLP &  \normalsize{LLMs, Transformers, GPT, LangChain, BM25, FAISS, Hugging Face, BERT, Spacy, Gensim, Glove, NLTK, prompt engineering, fine-tuning.}\\
-Data science  &  \normalsize{DL, Tensorflow, PyTorch, Prophet, Catboost, Autoencoders, LSTM, PCA, TSNE, Matching, Clustering, Anomaly detection, Time Series, Visualization.}\\
-Data &  \normalsize{SQL (PostgreSQL, Clickhouse, MS SQL, MySQL), Metabase, BigQuery, Airflow.}\\
-Develpoment &  \normalsize{FastAPI, Flask, Streamlit, Sentry, deploying on GCP, Bitbucket, GitLab and GitHub ci-cd} \\
-Base &  \normalsize{Python, Git, Docker, Linux, bash, Jira.}
+LLM and NLP & Transformers, prompt engineering, fine-tuning, CoT, SGR, SO, LangSmith, Langfuse, BM25, FAISS, Hugging Face, BERT, Spacy, Gensim, Glove, NLTK, .\\
+ML & DL, Tensorflow, PyTorch, Prophet, Catboost, Autoencoders, LSTM, PCA, TSNE, Matching, Clustering, Anomaly detection, Time Series, Visualization.\\
+Data & SQL (PostgreSQL, Clickhouse, MS SQL, MySQL), Metabase, BigQuery, Airflow.\\
+Development & FastAPI, Flask, Streamlit, Sentry, deploying on GCP, Bitbucket, GitLab and GitHub ci-cd.\\
+Base & Python, Git, Docker, Linux, bash, Jira.\\
 \end{tabularx}
+}
+
 
 \vfill
 \center{\footnotesize Last updated: \today}
