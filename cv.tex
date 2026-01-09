@@ -89,6 +89,8 @@
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\AtBeginBibliography{\footnotesize}
+
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -128,8 +130,7 @@
 \href{https://github.com/Irina-Na}{\raisebox{-0.05\height}\faGithub\ Irina-Na} \ $|$ \
 \href{https://linkedin.com/in/irinanosal}{\raisebox{-0.05\height}\faLinkedin\ irinanosal} \ $|$ \
 \href{mailto:ironia.i@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ ironia.i@gmail.com} \ $|$ \
-\href{tel:+381652655159}{\raisebox{-0.05\height}\faMobile \ +381 65 9438842} \ $|$ \
-\href{tel:+79222798856}{\raisebox{-0.05\height}\faMobile \ +7(922)279-88-56} \\
+\href{tel:+381652655159}{\raisebox{-0.05\height}\faMobile \ +381 65 9438842} \\
 \end{tabularx}
 
 
@@ -182,6 +183,12 @@ AI tech lead and engineer with Ph.D., expertise in NLP, matching, search, and LL
   \item[--]  Designed and built from scratch an LLM-based AI stylist service that takes outfit requests and generates a complete look (items + combinations) with consistent style, fit, color harmony, weather/temperature, etc.
   \item[--] Built a multimodal LLM garment attribute extractor (style/fit/texture/pattern/color/seasonality) and created the labeled image dataset.
   \item[--] Created a knowledge capture workflow from expert videos (transcription + structured extraction).
+\end{itemize}
+
+\noindent\textbf{LipSync Video}
+\hfill \textbf{Solo Lead AI Engineer}\par
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt]
+    \item[--]  Designed and implemented an end-to-end AI pipeline for video dubbing and lip-synchronization, enabling automatic adaptation of spoken content to new languages with realistic mouth movements.
 \end{itemize}
 
 \footnotesize Technologies: RAG, Routing, SO, CoT, prompt engineering, domain driven design, ElasticSearch, other vector db, FastAPI,
@@ -275,7 +282,7 @@ Implemented entity extraction, optimized search engine, and developed search log
 \textbf{\href{https://www.youtube.com/@CreativeWorkshop-s}{CreativeWorkshops} -- AI Research \& Community Initiative} & \hfill \textbf{Co-organizer} \\[-8pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{itemize}[leftmargin=*, nosep]
-  \item Active member of \href{https://t.me/ods_ns/2504}{the local} division of \href{https://old.ods.ai/en/}{OpenDataScience} community and co-organizer of  \href{https://t.me/+AK0U2AOuqgFjYWJi}{AI research community}.
+  \item Active member of \href{https://t.me/ods_ns/2504}{the local} division of \href{https://old.ods.ai/en/}{OpenDataScience ODS} community and co-organizer of  \href{https://t.me/+AK0U2AOuqgFjYWJi}{AI research community}.
   \item Co-organized meetups and public talks on applied AI; created a platform for local experts across diverse fields to share knowledge. Maintainer of the community \href{https://www.youtube.com/@CreativeWorkshop-s}{YouTube channel}.
 \end{itemize}
 } \\[-8pt]
@@ -316,6 +323,9 @@ Taught neural networks and applied AI for future cybersecurity specialists.
 \printbibliography[heading=none]
 \end{refsection}
 }
+
+
+
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
@@ -325,11 +335,10 @@ Taught neural networks and applied AI for future cybersecurity specialists.
 \setlength{\tabcolsep}{1pt}
 \renewcommand{\arraystretch}{1.0}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-LLM and NLP & Transformers, prompt engineering, fine-tuning, CoT, ToT, SGR, SO, LangSmith, Langfuse, BM25, FAISS, Hugging Face, BERT, Spacy, Gensim, Glove, NLTK, .\\
-ML & DL, Tensorflow, PyTorch, Prophet, Catboost, Autoencoders, LSTM, PCA, TSNE, Matching, Clustering, Anomaly detection, Time Series, Visualization.\\
+LLM and NLP & Transformers, prompt engineering, fine-tuning, CoT, ToT, SGR, SO, LangSmith, Langfuse, BM25, FAISS, Hugging Face, BERT, Spacy, Gensim, Glove, NLTK, AI-evaluation.\\
+ML & DL, Tensorflow, PyTorch, Prophet, Catboost, Autoencoders, LSTM, PCA, TSNE, Matching, Clustering, Anomaly detection, Time Series forecasting.\\
 Data & SQL (PostgreSQL, Clickhouse, MS SQL, MySQL), Metabase, BigQuery, Airflow.\\
-Development & FastAPI, Flask, Streamlit, Sentry, deploying on GCP, Bitbucket, GitLab and GitHub ci-cd.\\
-Base & Python, Git, Docker, Linux, bash, Jira.\\
+Development & Python, Docker, Linux, bash, FastAPI, Flask, Streamlit, Sentry, GCP, Bitbucket, git, ci-cd.\\
 \end{tabularx}
 }
 
